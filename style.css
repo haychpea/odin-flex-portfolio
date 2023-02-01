@@ -1,3 +1,8 @@
+/*
+* {
+    border: solid;
+}
+*/
 body {
     display: flex;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -15,9 +20,9 @@ body {
     background-color: #1F2937;
     align-items: center;
     justify-content: space-between;
-    padding-left: 15px;
-    padding-right: 15px;
-    flex: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    min-width: 300px;
 }
 
 .header ul {
@@ -34,43 +39,105 @@ body {
 
 .links {
     display: flex;
+    margin-left: 50px;
+}
+
+.content {
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero {
     display: flex;
     background-color: #1F2937;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
 }
 
 .hero .main-text {
     font-size: 48px;
     font-weight: 900;
     color:#F9FAF8;
-    
+    padding-bottom: 20px;
 }
 
 .hero .secondary-text {
     font-size: 18px;
     color: #E5E7EB;
+    max-width: 600px;
+    padding-bottom: 20px;
+}
+
+.hero-image {
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-image img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
+    display: flex;
+    flex: 1;
+    margin-left: 35px;
+    margin-right: 50px;
+    padding-top: 20px;
 }
 
 button {
     background-color: #3882F6;
     font-size: 24px;
+    text-align: center;
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
 }
 
-.information {
+#information {
     background-color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
 
 .info-header {
     font-size: 36px;
     font-weight: 900;
     color: #1F2937;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.info-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    text-align: center;
+    gap: 10px;
+}
+
+.box-image{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border: solid #3882F6;
+    border-radius: 20px;
 }
 
 .quote {
